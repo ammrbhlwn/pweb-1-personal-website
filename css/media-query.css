@@ -1,0 +1,103 @@
+@media screen and (max-width: 768px) {
+  /* =============================== */
+
+  /* navbar */
+
+  .navbar {
+    justify-content: space-between;
+    padding-inline: 6rem;
+  }
+
+  .navbar > .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    justify-content: center;
+    padding-inline: 10rem;
+    width: fit-content;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: #002147;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .navbar > .nav-list > li a,
+  .navbar > .nav-list > .close-menu {
+    color: white;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+
+  #check:checked ~ .nav-list {
+    right: 0;
+  }
+
+  /* =============================== */
+
+  /* =============================== */
+
+  .jumbotron > h1 {
+    font-size: 5rem;
+  }
+
+  /* =============================== */
+
+  /* =============================== */
+
+  .about {
+    flex-direction: column;
+    padding-inline: 4rem;
+  }
+
+  .about > .content > div {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .about img {
+    width: 300px;
+  }
+
+  .about > .content > div > div {
+    width: 100px;
+  }
+
+  .about > .content p {
+    font-size: 2.5rem;
+    text-align: justify;
+  }
+
+  /* =============================== */
+
+  /* =============================== */
+
+  .education {
+    padding-inline: 4rem;
+  }
+
+  .education > .card {
+    flex-direction: column;
+  }
+
+  /* =============================== */
+
+  /* =============================== */
+  .experience > .card {
+    grid-template-columns: repeat(1, 1fr);
+    padding-inline: 6rem;
+  }
+
+  .experience > .card > .event {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .experience > .card > .event .text {
+    text-align: center;
+  }
+}

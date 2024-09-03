@@ -1,0 +1,396 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 8px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/* Navigasi Bar */
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  padding-block: 4rem;
+  background-color: white;
+  z-index: 99;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 24rem;
+}
+
+.navbar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  text-decoration: none;
+  color: #002147;
+}
+
+.navbar > .nav-list {
+  display: flex;
+  gap: 4rem;
+  list-style-type: none;
+}
+
+.navbar > .nav-list > li a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: black;
+  transition: 0.05s ease-in-out;
+}
+
+.navbar .nav-list a:hover {
+  color: #2d3e50;
+  font-weight: bold;
+  border-bottom: 0.4rem solid #2d3e50;
+}
+
+.open-menu {
+  color: black;
+  cursor: pointer;
+  font-size: 4rem;
+  display: none;
+}
+
+.close-menu {
+  position: absolute;
+  cursor: pointer;
+  font-size: 4rem;
+  display: none;
+  top: 60px;
+  right: 7rem;
+}
+
+#check {
+  display: none;
+}
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/* jumbotron */
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5rem;
+  height: 100vh;
+}
+
+.jumbotron > h1 {
+  font-size: 6rem;
+  color: #2d3e50;
+}
+
+.jumbotron > a {
+  font-size: 2.5rem;
+}
+
+.jumbotron > .button {
+  text-decoration: none;
+  border-radius: 1rem;
+  border: 2px solid #2d3e50;
+  padding: 2rem 3rem;
+  background-color: #2d3e50;
+  color: white;
+}
+
+.jumbotron > .button:hover {
+  background-color: white;
+  color: #2d3e50;
+}
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/* about */
+
+.about {
+  display: flex;
+  padding-inline: 20rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 7rem;
+}
+
+.about > img {
+  width: 400px;
+  border-radius: 100%;
+}
+
+.about > .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about > .content > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about > .content h1 {
+  font-size: 7rem;
+  color: #2d3e50;
+}
+
+.about > .content > div > div {
+  width: 400px;
+  border-radius: 20px;
+  height: 8px;
+  background-color: #002147;
+}
+
+.about > .content > p {
+  line-height: 4rem;
+  font-size: 2.5rem;
+  text-align: justify;
+}
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/* education */
+
+.education {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d3e50;
+}
+
+.education > .title {
+  display: flex;
+  flex-direction: column;
+}
+
+.education > .title > h2 {
+  font-size: 4.5rem;
+  text-align: center;
+  line-height: 7rem;
+  color: #ffc312;
+}
+
+.education > .title > div {
+  width: 100%;
+  border-radius: 20px;
+  height: 8px;
+  background-color: #ffc312;
+}
+
+.education > .card {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.education > .card > .school {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 2px solid #ffc312;
+  border-radius: 1.5rem;
+  padding: 6rem;
+  text-align: center;
+  transition: transform 0.8s;
+  cursor: pointer;
+  color: white;
+}
+
+.education > .card > .school > h3 {
+  font-size: 3rem;
+}
+
+.education > .card > .school > h4 {
+  font-size: 2.5rem;
+}
+
+.education > .card > .school > p {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.education > .card > .school:hover {
+  background-color: #ffc312;
+  transform: scale(1.05);
+  color: #2d3e50;
+}
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/* experience */
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  padding-block: 8rem;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.experience > .title {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience > .title > h2 {
+  font-size: 4.5rem;
+  text-align: center;
+  line-height: 7rem;
+  color: #2d3e50;
+}
+
+.experience > .title > div {
+  width: 100%;
+  border-radius: 20px;
+  height: 8px;
+  background-color: #2d3e50;
+}
+
+.experience > .card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 24rem;
+}
+
+.experience > .card > .event {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 4rem;
+  padding: 2rem 4rem;
+  border: 2px solid #2d3e50;
+  border-radius: 1.5rem;
+  transition: transform 0.8s;
+  cursor: pointer;
+  color: #2d3e50;
+}
+
+.experience > .card > .event > img {
+  width: 100px;
+  height: 100px;
+}
+
+.experience > .card > .event > div {
+  text-align: left;
+}
+
+.experience > .card > .event h3 {
+  font-size: 3rem;
+}
+
+.experience > .card > .event h4 {
+  font-size: 2.5rem;
+}
+
+.experience > .card > .event p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.experience > .card > .event:hover {
+  background-color: #2d3e50;
+  color: white;
+}
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+
+main aside .social-media ul {
+  padding: 1.5rem 1.5rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: #2d3e50;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 4rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+  color: #89b0d9;
+}
