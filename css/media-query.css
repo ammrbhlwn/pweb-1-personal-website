@@ -29,6 +29,10 @@
     color: white;
   }
 
+  .navbar .nav-list a:hover {
+    color: #ffc312;
+  }
+
   .open-menu,
   .close-menu {
     display: block;
